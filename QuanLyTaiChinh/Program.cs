@@ -16,11 +16,9 @@ namespace QuanLyTaiChinh
 
 			DatabaseHelper.InitializeDatabase();
 			
-			DatabaseHelper.RegisterUser("default", "123");
-			User defaultUser = DatabaseHelper.ValidateUser("default", "123");
-			Session.CurrentUser = defaultUser;
+			DatabaseHelper.InitializeDatabase();
 
-			Application.Run(new frmMain());
+			Application.Run(new frmLogin());
 		}
 	}
 }

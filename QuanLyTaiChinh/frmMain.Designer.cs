@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.pnlSidebar = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnTietKiem = new Guna.UI2.WinForms.Guna2Button();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -45,7 +46,6 @@
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lblTotalIncome = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.btnTietKiem = new Guna.UI2.WinForms.Guna2Button();
 			this.pnlSidebar.SuspendLayout();
 			this.pnlMainContent.SuspendLayout();
 			this.guna2Panel3.SuspendLayout();
@@ -68,6 +68,25 @@
 			this.pnlSidebar.Name = "pnlSidebar";
 			this.pnlSidebar.Size = new System.Drawing.Size(230, 738);
 			this.pnlSidebar.TabIndex = 0;
+			// 
+			// btnTietKiem
+			// 
+			this.btnTietKiem.BorderRadius = 20;
+			this.btnTietKiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnTietKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnTietKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnTietKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnTietKiem.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnTietKiem.FillColor = System.Drawing.Color.Transparent;
+			this.btnTietKiem.Font = new System.Drawing.Font("Segoe UI", 16F);
+			this.btnTietKiem.ForeColor = System.Drawing.Color.White;
+			this.btnTietKiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.btnTietKiem.Location = new System.Drawing.Point(0, 240);
+			this.btnTietKiem.Name = "btnTietKiem";
+			this.btnTietKiem.Size = new System.Drawing.Size(230, 80);
+			this.btnTietKiem.TabIndex = 6;
+			this.btnTietKiem.Text = "Tiết Kiệm";
+			this.btnTietKiem.Click += new System.EventHandler(this.btnTietKiem_Click);
 			// 
 			// label2
 			// 
@@ -102,12 +121,11 @@
 			this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Top;
 			this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
 			this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2Button3.ForeColor = System.Drawing.Color.White;
 			this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			this.guna2Button3.Location = new System.Drawing.Point(0, 240);
+			this.guna2Button3.Location = new System.Drawing.Point(0, 316);
 			this.guna2Button3.Name = "guna2Button3";
 			this.guna2Button3.Size = new System.Drawing.Size(230, 80);
 			this.guna2Button3.TabIndex = 3;
@@ -278,25 +296,6 @@
 			this.label3.TabIndex = 0;
 			this.label3.Text = "TỔNG THU THÁNG NÀY";
 			// 
-			// btnTietKiem
-			// 
-			this.btnTietKiem.BorderRadius = 20;
-			this.btnTietKiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnTietKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnTietKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnTietKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnTietKiem.Dock = System.Windows.Forms.DockStyle.Top;
-			this.btnTietKiem.FillColor = System.Drawing.Color.Transparent;
-			this.btnTietKiem.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnTietKiem.ForeColor = System.Drawing.Color.White;
-			this.btnTietKiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			this.btnTietKiem.Location = new System.Drawing.Point(0, 320);
-			this.btnTietKiem.Name = "btnTietKiem";
-			this.btnTietKiem.Size = new System.Drawing.Size(230, 80);
-			this.btnTietKiem.TabIndex = 6;
-			this.btnTietKiem.Text = "Tiết Kiệm";
-			this.btnTietKiem.Click += new System.EventHandler(this.btnTietKiem_Click);
-			// 
 			// frmMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -306,6 +305,7 @@
 			this.Controls.Add(this.pnlMainContent);
 			this.Controls.Add(this.pnlSidebar);
 			this.Name = "frmMain";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.frmMain_Load);
 			this.pnlSidebar.ResumeLayout(false);
